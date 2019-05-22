@@ -8,9 +8,12 @@
 </head>
 <body>
     <p id="label"></br></p>
-    <button type="button" id="b1" onclick="document.getElementById('label').innerHTML='button1 is pushed'; document.getElementById('b1').disabled=true; document.getElementById('b2').disabled=false;">button1</button>
-    <button type="button" id="b2" onclick="document.getElementById('label').innerHTML='button2 is pushed'; document.getElementById('b2').disabled=true; document.getElementById('b1').disabled=false;">button2</button>
+    <button type="button" id="b1" onclick="document.getElementById('label').innerHTML='button1 is pushed';
+    this.disabled=true; document.getElementById('b2').disabled=false;">button1</button>
+    <button type="button" id="b2" onclick="document.getElementById('label').innerHTML='button2 is pushed'; 
+    this.disabled=true; document.getElementById('b1').disabled=false;">button2</button>
     </br>
-    <button type="button" onclick="document.getElementById('label').innerHTML='</br>'; document.getElementById('b1').disabled=false; document.getElementById('b2').disabled=false;">reset</button>
+    <button type="button" onclick="document.getElementById('label').innerHTML='</br>'; document.getElementById('b1').disabled=false; 
+    document.getElementById('b2').disabled=false;">reset</button>
 </body>
 </html>
