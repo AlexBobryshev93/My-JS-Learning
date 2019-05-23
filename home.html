@@ -7,13 +7,22 @@
     <title>JS Learning</title>
 </head>
 <body>
+    <p id="date"></p>
     <p id="label"></br></p>
-    <button type="button" id="b1" onclick="document.getElementById('label').innerHTML='button1 is pushed';
+    <button type="button" id="b1" onclick="showDate(); document.getElementById('label').innerHTML='button1 is pushed';
     this.disabled=true; document.getElementById('b2').disabled=false;">button1</button>
-    <button type="button" id="b2" onclick="document.getElementById('label').innerHTML='button2 is pushed'; 
+    <button type="button" id="b2" onclick="showDate(); document.getElementById('label').innerHTML='button2 is pushed'; 
     this.disabled=true; document.getElementById('b1').disabled=false;">button2</button>
     </br>
-    <button type="button" onclick="document.getElementById('label').innerHTML='</br>'; document.getElementById('b1').disabled=false; 
+    <button type="button" onclick="showDate(); document.getElementById('label').innerHTML='</br>'; document.getElementById('b1').disabled=false; 
     document.getElementById('b2').disabled=false;">reset</button>
+
+    <script>
+        function showDate() {
+            var date = new Date();
+            document.getElementById("date").innerHTML=date + "</br>";
+        }
+        showDate();    
+    </script>
 </body>
 </html>
