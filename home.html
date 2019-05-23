@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Learning</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <p id="date"></p>
@@ -16,13 +17,8 @@
     </br>
     <button type="button" onclick="showDate(); document.getElementById('label').innerHTML='</br>'; document.getElementById('b1').disabled=false; 
     document.getElementById('b2').disabled=false;">reset</button>
-
     <script>
-        function showDate() {
-            var date = new Date();
-            document.getElementById("date").innerHTML=date + "</br>";
-        }
-        showDate();    
+    	showDate();
     </script>
 </body>
 </html>
