@@ -12,12 +12,12 @@
     <p id="counter">buttons were pushed: 0 times</p>
     <p id="date">last time: </p>
     
-    <button type="button" id="b1" onclick="showDate(); document.getElementById('label').innerHTML='button1 is pushed';
-    this.disabled=true; document.getElementById('b2').disabled=false; count++; 
+    <button type="button" id="b1" onclick="count++; showDate(); document.getElementById('label').innerHTML='button1 is pushed';
+    this.disabled=true; document.getElementById('b2').disabled=false; 
     document.getElementById('counter').innerHTML='buttons were pushed: ' + count + ' times';">button1</button>
     
-    <button type="button" id="b2" onclick="showDate(); document.getElementById('label').innerHTML='button2 is pushed'; 
-    this.disabled=true; document.getElementById('b1').disabled=false; count++;
+    <button type="button" id="b2" onclick="count++; showDate(); document.getElementById('label').innerHTML='button2 is pushed'; 
+    this.disabled=true; document.getElementById('b1').disabled=false; 
     document.getElementById('counter').innerHTML='buttons were pushed: ' + count + ' times';">button2</button>
     </br>
 
